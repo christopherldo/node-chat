@@ -19,8 +19,7 @@ ul, li {
 }
 
 #loginPage {
-  display: none;
-  background-color: #fff;
+  display: flex;
 }
 
 #loginNameInput {
@@ -35,7 +34,7 @@ ul, li {
 }
 
 #chatPage {
-  display: flex;
+  display: none;
 }
 
 .chatArea {
@@ -48,7 +47,6 @@ ul, li {
 .chatList {
   padding: 10px;
   flex: 1;
-  background-color: #fff;
   overflow-y: scroll;
   max-height: calc(100vh - 20px - 40px - 1px);
 }
@@ -96,7 +94,6 @@ ul, li {
   height: 40px;
   padding: 0 10px;
   font-size: 15px;
-  background-color: #fff;
   outline: 0;
   border: 0;
   border-top: 1px solid #000;
