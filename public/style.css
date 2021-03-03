@@ -46,13 +46,43 @@ ul, li {
 }
 
 .chatList {
+  padding: 10px;
   flex: 1;
   background-color: #fff;
+  overflow-y: scroll;
+  max-height: calc(100vh - 20px - 40px - 1px);
+}
+
+.chatList li {
+  padding: 3px;
+  font-size: 15px;
+}
+
+.chatList li.m-status {
+  color: #333;
+  font-style: italic;
+}
+
+.chatList li.m-txt span{
+  font-weight: bold;
+  color: #00f;
+}
+
+.chatList li.m-txt span.me{
+  color: #f00;
 }
 
 .userList {
   width: 200px;
   background-color: #ccc;
+  overflow-y: scroll;
+  border-left: 1px solid #000;
+  max-height: calc(100vh - 40px - 1px);
+}
+
+.userList li {
+  padding: 5px;
+  font-size: 15px;
 }
 
 .chatInput {
