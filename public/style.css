@@ -82,6 +82,7 @@ li {
 .chatList li {
   padding: 3px;
   font-size: 15px;
+  word-break: break-word;
 }
 
 .chatList li.m-status {
