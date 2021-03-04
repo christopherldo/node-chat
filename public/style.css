@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,6 +35,13 @@ ul, li {
 
 #loginPage {
   display: flex;
+  background: #9D50BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
 }
 
 #loginNameInput {
@@ -31,17 +53,23 @@ ul, li {
   outline: 0;
   width: 100%;
   max-width: 400px;
+  text-align: center;
 }
 
 #chatPage {
   display: none;
+  background: #9D50BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .chatArea {
   flex: 1;
   width: 100%;
   display: flex;
-  background-color: #ccc;
 }
 
 .chatList {
@@ -57,25 +85,30 @@ ul, li {
 }
 
 .chatList li.m-status {
-  color: #333;
+  color: #ddd;
   font-style: italic;
 }
 
-.chatList li.m-txt span{
-  font-weight: bold;
-  color: #00f;
+.chatList li.m-txt {
+  color: #fff;
 }
 
-.chatList li.m-txt span.me{
-  color: #f00;
+.chatList li.m-txt span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.chatList li.m-txt span.me {
+  color: #eee;
+  font-weight: bold;
 }
 
 .userList {
   width: 200px;
-  background-color: #ccc;
   overflow-y: scroll;
   border-left: 1px solid #000;
   max-height: calc(100vh - 40px - 1px);
+  color: #ccc;
 }
 
 .userList li {
