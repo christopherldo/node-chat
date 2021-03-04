@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
 const http = require('http');
@@ -8,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
